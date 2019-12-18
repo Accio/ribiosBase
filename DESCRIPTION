@@ -8,4 +8,4 @@ Author: Jitao David Zhang, Clemens Broger, and Detlef Wolf, with input from
 Maintainer: Jitao David Zhang <jitao_david.zhang@roche.com>
 Description: 'ribios' (R interface to BIOS) is a collection of R packages dedicated to bioinformatics, computational biology, chemoinformatics, and statistical analysis tasks in drug discovery. It is built on the thoroughly tested C library 'BIOS', which is known as 'Bioinfo-C' in the public domain, which is developed throughout many years by the Roche Bioinformatics Group (). This package provides adapted source code of 'Bioinfo-C' that can be called from the R environment, and is the foundation of other ribios packages.
 License: GPL-3
-RoxygenNote: 6.1.1
+RoxygenNote: 7.0.2
