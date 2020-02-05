@@ -35,7 +35,7 @@ build: roxygenise
 	@echo '====== Building finished ======'
 	@echo ' '
 
-install: roxygenise static
+install: roxygenise 
 	@echo '====== Installing Package ======'
 	@(${R} -q -e "library(devtools); devtools::install(reload=FALSE, quick=FALSE, build=TRUE, upgrade=FALSE)")
 	@echo '====== Installing finished ======'
@@ -54,10 +54,6 @@ compile:src/*.c
 	${R_CC} ${R_CPPFLAGS} ${R_CFLAGS} ${R_CPICFLAGS} -I ../inst/include -c $${cfile}; \
 	done
 	@echo '====== compiling finished ======'
-
-static: compile
-	@echo '====== Compile the static library  ======'
-	@(cd src; ar rcs ../inst/lib/ribiosBase.a *.o)
 
 clean:
 	@echo '====== Cleaning Package ======'
